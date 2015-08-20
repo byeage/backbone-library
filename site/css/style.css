@@ -1,0 +1,77 @@
+/* line 1, ../sass/sass/style.scss */
+body {
+  background-color: #eee;
+}
+
+/* line 4, ../sass/sass/style.scss */
+.bookContainer {
+  outline: 1px solid #aaa;
+  width: 350px;
+  height: 130px;
+  background-color: #fff;
+  float: left;
+  margin: 5px;
+}
+
+/* line 12, ../sass/sass/style.scss */
+.bookContainer img {
+  width: 80px;
+  float: left;
+  margin: 10px;
+}
+
+/* line 17, ../sass/sass/style.scss */
+.bookContainer ul {
+  list-style-type: none;
+  margin-bottom: 0;
+}
+
+/* line 21, ../sass/sass/style.scss */
+.bookContainer button {
+  float: right;
+  margin: 10px;
+}
+
+/* line 25, ../sass/sass/style.scss */
+#addBook label {
+  width: 100px;
+  margin-right: 10px;
+  text-align: right;
+  line-height: 25px;
+}
+
+/* line 31, ../sass/sass/style.scss */
+#addBook label, #addBook input {
+  display: block;
+  margin-bottom: 10px;
+  float: left;
+}
+
+/* line 36, ../sass/sass/style.scss */
+#addBook label[for="title"], #addBook label[for="releaseDate"] {
+  clear: both;
+}
+
+/* line 39, ../sass/sass/style.scss */
+#addBook button {
+  display: block;
+  margin: 5px 20px 10px 10px;
+  float: right;
+  clear: both;
+}
+
+/* line 45, ../sass/sass/style.scss */
+#addBook div {
+  width: 550px;
+}
+
+/* line 48, ../sass/sass/style.scss */
+#addBook div:after {
+  content: "";
+  display: block;
+  height: 0;
+  visibility: hidden;
+  clear: both;
+  font-size: 0;
+  line-height: 0;
+}

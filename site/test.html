@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Examples</title>
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <script src="js/lib/jquery-2.1.4.min.js"></script>
+        <script>
+                        $(function(){
+                    /*-------------------------------- */
+                /*-------------------------------- */
+                        /*$.post( '/api/books', {
+                        'title': 'JavaScript the good parts',
+                        'author': 'Douglas Crockford',
+                        'releaseDate': new Date( 2008, 4, 1 ).getTime()
+                        }, function(data, textStatus, jqXHR) {
+                            console.log( 'Post response:' );
+                            console.dir( data );
+                            console.log( textStatus );
+                            console.dir( jqXHR );
+                        }).success(function(e){
+                            console.log(e);
+                        }).error(function(e){
+                            console.log(e);
+                        })*/
+                /*-------------------------------- */
+                            $.get('/api/books',function(data,textStatus,jqXHR){
+                                console.log('get response');
+                                console.dir(data);
+                                console.log(textStatus);
+                                console.dir(jqXHR);
+                            });
+                            /*-------------------------------- */
+
+                           /* $.get('/api/books/55d595e2526d0c4c26000002',function(data,textStatus,jqXHR){
+                                console.log('get response');
+                                console.dir(data);
+                                console.log(textStatus);
+                                console.dir(jqXHR);
+                            });*/
+
+                            /*-------------------------------- */
+                            /*$.ajax({
+                                url:'/api/books/55d595e2526d0c4c26000002',
+                                type:'PUT',
+                                data:{
+                                    'title':'hello word',
+                                    'author':'madao',
+                                    'releaseDate':new Date(2015,7,20).getTime()
+                                },
+                                success:function(data,textStatus,jqXHR){
+                                    console.log('get response');
+                                    console.dir(data);
+                                    console.log(textStatus);
+                                    console.dir(jqXHR);
+                                },
+                                error:function(err){
+                                    console.log(err);
+                                }
+                            })*/
+
+
+
+                            /*-------------------------------- */
+                                    //"55d589f7c8f7dc1411000001"
+                                $.ajax({
+                                   url:'/api/books/55d589f7c8f7dc1411000001',
+                                   type:'DELETE',
+                                   success:function(data,textStatus,jqXHR){
+                                        console.log('get response');
+                                        console.dir(data);
+                                        console.log(textStatus);
+                                        console.dir(jqXHR);
+                                   }
+                                })
+
+
+
+                            /*-------------------------------- */
+                        });
+        </script>
+    </body>
+</html>
